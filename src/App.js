@@ -4,13 +4,14 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Home from './component/Home';
 import About from './component/About';
-import AllBooks from './component/AllBooks';
+import AllBooks from './component/allbooks/AllBooks';
 import SignIn from './component/SignIn';
 import SignUp from './component/SignUp';
+import ViewBookDetail from './component/bookDetail/ViewBookDetail'
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -18,9 +19,11 @@ function App() {
         <Route path="/allbooks" element={<AllBooks />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path = "/get-book-by-id/:id" element ={<ViewBookDetail/>}/>
+        <Route path = "/signup" element ={<SignUp/>}/>
       </Routes>
       <Footer/>
-    </Router>
+    </>
   );
 }
 

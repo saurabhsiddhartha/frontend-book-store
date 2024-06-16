@@ -3,7 +3,17 @@
     color: white;
 
 }
-
+#recent-book-heading{
+    justify-content: center; 
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+.book-cards-container{ 
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    /* background-color: rgb(253, 253, 253); */
+}
 @media (max-width: 768px) {
     .homepage {
         display: flex;
@@ -11,5 +21,9 @@
         align-items: center;
         font-size: 1.7rem;
         color: white; 
+    }
+    .book-cards-container{
+        display: block;
+        justify-content: space-evenly;
     }
 }

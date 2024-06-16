@@ -1,0 +1,76 @@
+.books-display-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.book-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin: 10px; /* Adjusted to provide more spacing */
+    width: calc(20% - 20px); /* Adjusting width to fit 5 items per row */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.card-detail {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-author, .card-price, .card-description {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .book-item {
+        width: calc(25% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .book-item {
+        width: calc(33.33% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .book-item {
+        width: calc(50% - 20px); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .book-item {
+        width: calc(100% - 20px); /* Adjust for smallest screens */
+    }
+}
