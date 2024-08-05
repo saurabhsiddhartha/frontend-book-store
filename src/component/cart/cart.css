@@ -1,0 +1,68 @@
+#main-container{
+    min-height: 79vh;
+    width: 100%;  
+    padding: 20px;
+    background-color: rgb(223, 235, 233);
+}
+#item-box{
+    margin: auto;
+    border: 2px solid rgb(216, 215, 215);
+    background-color: #b6b6b6ab;
+    padding: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#item-box img{
+    width: 80px;
+    height: 80px;
+}
+#item-box button{
+    background-color: #f3d720;
+    width: 60px;
+    height: 2rem;
+}
+.total-amount{
+    margin-right: 0px;
+}
+
+.total-amount {
+    margin: auto;
+    width: 80%;
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #dee2e6; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Padding inside the box */
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Space above the container */
+  }
+  
+  .total-amount h3 {
+    margin: 0 0 10px 0; /* No margin on top, 10px margin on bottom */
+    font-size: 1.5em; /* Larger font size */
+    color: #343a40; /* Darker color for the heading */
+  }
+  
+  .total-amount p {
+    margin: 0 0 20px 0; /* No margin on top, 20px margin on bottom */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #495057; /* Grayish color for the text */
+  }
+  
+  .total-amount button {
+    background-color: #e7cf47; /* Primary blue color */
+    color: black; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1em; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .total-amount button:hover {
+    background-color: #b0b300; /* Darker blue on hover */
+  }
+  
